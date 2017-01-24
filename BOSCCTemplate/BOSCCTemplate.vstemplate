@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>BOSCCTemplate</Name>
+    <Description>BOSCCTemplate</Description>
+    <Icon>BOSCCTemplate.ico</Icon>
+    <TemplateID>4f9ed320-57c2-41db-9f80-4e7766caf598</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>Class.cs</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true">Class.cs</ProjectItem>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>ModelGenWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cff9c1600f129302</Assembly>
+    <FullClassName>ModelGenWizard.ModelWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
