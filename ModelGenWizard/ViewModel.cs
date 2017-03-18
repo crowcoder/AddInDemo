@@ -1,8 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Windows;
-using System.Windows.Input;
 
 namespace ModelGenWizard
 {
@@ -41,31 +39,6 @@ namespace ModelGenWizard
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-    }
-
-    public class GoCommand : ICommand
-    {
-        public event EventHandler CanExecuteChanged;
-
-        public bool CanExecute(object parameter)
-        {
-            return true;
-        }
-
-        public void Execute(object parameter)
-        {
-            Window window = parameter as Window;
-            ViewModel vm = window.DataContext as ViewModel;
-
-            //Call to a very complex database parsing routine here....
-
-            vm.GeneratedCode = @"public int ContactID { get; set; }
-        public string ContactName { get; set; }
-        public string ContactPhone { get; set; }";
-
-            window.Close();
-
         }
     }
 }

@@ -6,25 +6,13 @@ namespace ModelGenWizard
 {
     public class ModelWizard : IWizard
     {
-        public void BeforeOpeningFile(EnvDTE.ProjectItem projectItem)
-        {
-            //  throw new NotImplementedException();
-        }
+        public void BeforeOpeningFile(EnvDTE.ProjectItem projectItem) { }
 
-        public void ProjectFinishedGenerating(EnvDTE.Project project)
-        {
-            //throw new NotImplementedException();
-        }
+        public void ProjectFinishedGenerating(EnvDTE.Project project) { }
 
-        public void ProjectItemFinishedGenerating(EnvDTE.ProjectItem projectItem)
-        {
-            //throw new NotImplementedException();
-        }
+        public void ProjectItemFinishedGenerating(EnvDTE.ProjectItem projectItem) { }
 
-        public void RunFinished()
-        {
-            // throw new NotImplementedException();
-        }
+        public void RunFinished() { }
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
@@ -35,6 +23,7 @@ namespace ModelGenWizard
                 replacementsDictionary.Add("$dynamicContent$", vm.GeneratedCode);
             };
             wi.ShowDialog();
+
         }
 
         public bool ShouldAddProjectItem(string filePath)
