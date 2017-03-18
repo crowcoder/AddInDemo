@@ -3,7 +3,7 @@
   <Metadata>
     <Identity Id="BOSCCvsix.Robert Crowley.bab0aad3-ccfd-41d2-bb0c-376733b14be8" Version="1.0" Language="en-US" Publisher="Robert Crowley" />
     <DisplayName>BOSCCvsix</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description xml:space="preserve">BOSCC demo</Description>
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
